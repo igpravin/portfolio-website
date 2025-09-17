@@ -1,0 +1,54 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="250" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="400" height="50" fill="#ff8c42"/>
+  
+  <!-- Laptop mockup -->
+  <rect x="40" y="35" width="320" height="200" rx="8" fill="#1a1a1a"/>
+  <rect x="50" y="45" width="300" height="175" rx="4" fill="#ffffff"/>
+  
+  <!-- Browser chrome -->
+  <rect x="50" y="45" width="300" height="25" fill="#f8f9fa"/>
+  <circle cx="62" cy="57.5" r="4" fill="#ff5f56"/>
+  <circle cx="78" cy="57.5" r="4" fill="#ffbd2e"/>
+  <circle cx="94" cy="57.5" r="4" fill="#27ca3f"/>
+  <rect x="110" y="52" width="160" height="12" rx="6" fill="#e9ecef"/>
+  
+  <!-- Website content -->
+  <!-- Navigation -->
+  <rect x="50" y="70" width="300" height="20" fill="#ffffff"/>
+  <rect x="60" y="75" width="80" height="8" rx="2" fill="#ff6b35"/>
+  <rect x="250" y="75" width="90" height="8" rx="2" fill="#ddd"/>
+  
+  <!-- Hero section -->
+  <rect x="50" y="95" width="300" height="80" fill="#ffffff"/>
+  <rect x="60" y="105" width="60" height="4" rx="2" fill="#999"/>
+  <rect x="60" y="115" width="120" height="12" rx="2" fill="#1a1a1a"/>
+  <rect x="60" y="135" width="180" height="6" rx="2" fill="#666"/>
+  <rect x="60" y="145" width="160" height="4" rx="2" fill="#999"/>
+  <rect x="60" y="160" width="80" height="10" rx="5" fill="#ff6b35"/>
+  <rect x="150" y="160" width="80" height="10" rx="5" fill="#ddd"/>
+  
+  <!-- Profile image placeholder -->
+  <circle cx="280" cy="135" r="25" fill="#ff6b35" opacity="0.3"/>
+  <circle cx="280" cy="135" r="18" fill="#ff6b35" opacity="0.5"/>
+  <circle cx="280" cy="130" r="6" fill="#ffffff"/>
+  <path d="M270 145 Q280 140 290 145 Q285 155 280 160 Q275 155 270 145" fill="#ffffff"/>
+  
+  <!-- Skills section -->
+  <rect x="50" y="180" width="300" height="40" fill="#f8f9fa"/>
+  <rect x="60" y="190" width="40" height="8" rx="2" fill="#1a1a1a"/>
+  
+  <!-- Skill chips -->
+  <rect x="60" y="205" width="35" height="10" rx="5" fill="#ffffff" stroke="#e9ecef"/>
+  <rect x="105" y="205" width="30" height="10" rx="5" fill="#ffffff" stroke="#e9ecef"/>
+  <rect x="145" y="205" width="40" height="10" rx="5" fill="#ffffff" stroke="#e9ecef"/>
+  <rect x="195" y="205" width="25" height="10" rx="5" fill="#ffffff" stroke="#e9ecef"/>
+  <rect x="230" y="205" width="25" height="10" rx="5" fill="#ffffff" stroke="#e9ecef"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="370" cy="30" r="15" fill="#ff8c42" opacity="0.2"/>
+  <rect x="363" y="23" width="14" height="14" rx="2" fill="#ff8c42" opacity="0.4"/>
+  <polygon points="370,25 373,28 370,31 367,28" fill="#ffffff"/>
+  <polygon points="370,29 367,32 370,35 373,32" fill="#ffffff"/>
+</svg>

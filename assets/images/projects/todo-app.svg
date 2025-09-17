@@ -1,0 +1,44 @@
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="250" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="400" height="60" fill="#ff6b35"/>
+  
+  <!-- Phone mockup -->
+  <rect x="50" y="30" width="300" height="190" rx="20" fill="#ffffff" stroke="#e9ecef" stroke-width="2"/>
+  <rect x="70" y="50" width="260" height="150" rx="10" fill="#ffffff"/>
+  
+  <!-- Header -->
+  <rect x="80" y="60" width="120" height="4" rx="2" fill="#ff6b35"/>
+  <text x="85" y="78" fill="#1a1a1a" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold">To-Do List</text>
+  
+  <!-- Input field -->
+  <rect x="80" y="90" width="180" height="25" rx="12" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1"/>
+  <text x="90" y="106" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="10">Add new task...</text>
+  <circle cx="280" cy="102.5" r="10" fill="#ff6b35"/>
+  <text x="276" y="107" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold">+</text>
+  
+  <!-- Task list -->
+  <g transform="translate(80, 130)">
+    <!-- Task 1 - Completed -->
+    <circle cx="8" cy="8" r="6" fill="#10b981"/>
+    <path d="M5 8 L7 10 L11 6" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="20" y="12" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="10" text-decoration="line-through">Complete project setup</text>
+    
+    <!-- Task 2 - Active -->
+    <circle cx="8" cy="28" r="6" fill="none" stroke="#e9ecef" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#1a1a1a" font-family="system-ui, -apple-system, sans-serif" font-size="10">Add responsive design</text>
+    
+    <!-- Task 3 - Active -->
+    <circle cx="8" cy="48" r="6" fill="none" stroke="#e9ecef" stroke-width="1.5"/>
+    <text x="20" y="52" fill="#1a1a1a" font-family="system-ui, -apple-system, sans-serif" font-size="10">Implement local storage</text>
+    
+    <!-- Task 4 - Active -->
+    <circle cx="8" cy="68" r="6" fill="none" stroke="#e9ecef" stroke-width="1.5"/>
+    <text x="20" y="72" fill="#1a1a1a" font-family="system-ui, -apple-system, sans-serif" font-size="10">Test cross-browser compatibility</text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="320" cy="40" r="25" fill="rgba(255, 107, 53, 0.1)"/>
+  <circle cx="320" cy="40" r="15" fill="rgba(255, 107, 53, 0.2)"/>
+  <path d="M312 40 L316 44 L328 32" stroke="#ff6b35" stroke-width="2" fill="none"/>
+</svg>

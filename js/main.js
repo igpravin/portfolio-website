@@ -7,51 +7,33 @@
 const portfolioData = [
     {
         id: 1,
-        title: "E-commerce Platform",
+        title: "To-Do List Web App",
         category: "web",
-        description: "Modern e-commerce solution with React and Node.js",
-        image: "https://via.placeholder.com/400x250/6366f1/ffffff?text=E-commerce+Platform",
-        technologies: ["React", "Node.js", "MongoDB"]
+        description: "A simple web-based to-do list that allows users to add, delete, and mark tasks as complete with dynamic interaction and local storage",
+        image: "assets/images/projects/todo-app.svg",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "#",
+        githubUrl: "#"
     },
     {
         id: 2,
-        title: "Mobile Banking App",
-        category: "mobile",
-        description: "Secure banking application for iOS and Android",
-        image: "https://via.placeholder.com/400x250/8b5cf6/ffffff?text=Banking+App",
-        technologies: ["React Native", "TypeScript", "Firebase"]
+        title: "Personal Portfolio Website",
+        category: "web",
+        description: "A responsive personal portfolio website showcasing skills, projects, and contact information with modern design",
+        image: "assets/images/projects/portfolio-website-simple.svg",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "#",
+        githubUrl: "#"
     },
     {
         id: 3,
-        title: "Brand Identity Design",
-        category: "branding",
-        description: "Complete brand identity for tech startup",
-        image: "https://via.placeholder.com/400x250/f59e0b/ffffff?text=Brand+Identity",
-        technologies: ["Figma", "Illustrator", "Photoshop"]
-    },
-    {
-        id: 4,
-        title: "Restaurant Website",
+        title: "My Notes App",
         category: "web",
-        description: "Responsive website for local restaurant chain",
-        image: "https://via.placeholder.com/400x250/10b981/ffffff?text=Restaurant+Site",
-        technologies: ["HTML5", "CSS3", "JavaScript"]
-    },
-    {
-        id: 5,
-        title: "Fitness Tracking App",
-        category: "mobile",
-        description: "Health and fitness tracking mobile application",
-        image: "https://via.placeholder.com/400x250/ef4444/ffffff?text=Fitness+App",
-        technologies: ["Flutter", "Dart", "SQLite"]
-    },
-    {
-        id: 6,
-        title: "Corporate Branding",
-        category: "branding",
-        description: "Rebranding project for financial services company",
-        image: "https://via.placeholder.com/400x250/3b82f6/ffffff?text=Corporate+Brand",
-        technologies: ["Adobe Creative Suite", "Sketch"]
+        description: "A web-based notes application that allows users to add, delete, and mark tasks as complete with local storage functionality",
+        image: "assets/images/projects/notes-app.svg",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "#",
+        githubUrl: "#"
     }
 ];
 
@@ -141,13 +123,12 @@ function initializeNavigation() {
  */
 function initializePortfolio() {
     const portfolioGrid = document.getElementById('portfolio-grid');
-    const filterButtons = document.querySelectorAll('.filter-btn');
 
     // Render portfolio items
-    function renderPortfolioItems(items = portfolioData) {
+    function renderPortfolioItems() {
         portfolioGrid.innerHTML = '';
         
-        items.forEach(item => {
+        portfolioData.forEach(item => {
             const portfolioItem = createPortfolioItem(item);
             portfolioGrid.appendChild(portfolioItem);
         });
@@ -165,45 +146,20 @@ function initializePortfolio() {
         const portfolioItem = document.createElement('div');
         portfolioItem.className = `portfolio-item portfolio-${item.category}`;
         portfolioItem.innerHTML = `
-            <img src="${item.image}" alt="${item.title}" style="width: 100%; height: 100%; object-fit: cover;">
-            <div class="portfolio-item-overlay">
-                <div class="portfolio-item-content">
-                    <h3>${item.title}</h3>
-                    <p>${item.description}</p>
-                    <div class="portfolio-technologies">
-                        ${item.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                    </div>
+            <div class="portfolio-image">
+                <img src="${item.image}" alt="${item.title}" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #ff6b35, #ff8c42)';">
+            </div>
+            <div class="portfolio-content">
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+                <div class="portfolio-technologies">
+                    ${item.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
             </div>
         `;
 
-        // Add click event for modal (future enhancement)
-        portfolioItem.addEventListener('click', function() {
-            console.log(`Opening project: ${item.title}`);
-            // Future: Open modal with project details
-        });
-
         return portfolioItem;
     }
-
-    // Filter functionality
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-            
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            
-            // Filter portfolio items
-            if (filter === 'all') {
-                renderPortfolioItems(portfolioData);
-            } else {
-                const filteredItems = portfolioData.filter(item => item.category === filter);
-                renderPortfolioItems(filteredItems);
-            }
-        });
-    });
 
     // Initial render
     renderPortfolioItems();
@@ -255,9 +211,28 @@ function initializeScrollEffects() {
     }, observerOptions);
 
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.skill-item, .service-card, .section-header');
+    const animateElements = document.querySelectorAll('.skill-item, .skill-card, .section-header');
     animateElements.forEach(element => {
         observer.observe(element);
+    });
+    
+    // Initialize skill progress bars animation
+    const skillProgressBars = document.querySelectorAll('.skill-progress');
+    const skillObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressBar = entry.target;
+                const width = progressBar.style.width;
+                progressBar.style.width = '0%';
+                setTimeout(() => {
+                    progressBar.style.width = width;
+                }, 200);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    skillProgressBars.forEach(bar => {
+        skillObserver.observe(bar);
     });
 }
 
@@ -269,17 +244,24 @@ function initializeAnimations() {
     const style = document.createElement('style');
     style.textContent = `
         .portfolio-technologies {
-            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 0;
         }
         .tech-tag {
             display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 0.25rem 0.5rem;
-            border-radius: 1rem;
+            background: rgba(255, 107, 53, 0.1);
+            color: var(--accent-color);
+            padding: 0.25rem 0.6rem;
+            border-radius: 12px;
             font-size: 0.8rem;
-            margin: 0.25rem 0.25rem 0 0;
-            backdrop-filter: blur(10px);
+            font-weight: 500;
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            transition: all 0.2s ease;
+        }
+        .tech-tag:hover {
+            background: rgba(255, 107, 53, 0.15);
         }
     `;
     document.head.appendChild(style);

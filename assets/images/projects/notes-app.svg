@@ -1,0 +1,65 @@
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="250" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="400" height="55" fill="#10b981"/>
+  
+  <!-- Tablet mockup -->
+  <rect x="60" y="30" width="280" height="190" rx="15" fill="#1a1a1a"/>
+  <rect x="70" y="40" width="260" height="170" rx="8" fill="#ffffff"/>
+  
+  <!-- App interface -->
+  <g transform="translate(70, 40)">
+    <!-- Header -->
+    <rect x="0" y="0" width="260" height="35" fill="#ffffff"/>
+    <text x="15" y="22" fill="#10b981" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold">My Notes</text>
+    <circle cx="230" cy="17.5" r="12" fill="#10b981"/>
+    <text x="226" y="22" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold">+</text>
+    
+    <!-- Search bar -->
+    <rect x="15" y="45" width="230" height="25" rx="12" fill="#f8f9fa" stroke="#e9ecef"/>
+    <circle cx="25" cy="57.5" r="4" fill="#999"/>
+    <path d="M27.5 60 L30 62.5" stroke="#999" stroke-width="1.5"/>
+    <text x="35" y="60" fill="#999" font-family="system-ui, -apple-system, sans-serif" font-size="9">Search notes...</text>
+    
+    <!-- Notes grid -->
+    <g transform="translate(15, 80)">
+      <!-- Note 1 -->
+      <rect x="0" y="0" width="70" height="75" rx="8" fill="#fff3cd" stroke="#ffeaa7"/>
+      <text x="5" y="12" fill="#1a1a1a" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold">Shopping List</text>
+      <text x="5" y="25" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Milk and eggs</text>
+      <text x="5" y="35" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Bread</text>
+      <text x="5" y="45" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Vegetables</text>
+      <text x="5" y="55" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Fruits</text>
+      <text x="5" y="70" fill="#999" font-family="system-ui, -apple-system, sans-serif" font-size="6">2 hours ago</text>
+      
+      <!-- Note 2 -->
+      <rect x="85" y="0" width="70" height="75" rx="8" fill="#e3f2fd" stroke="#90caf9"/>
+      <text x="90" y="12" fill="#1a1a1a" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold">Project Ideas</text>
+      <text x="90" y="25" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Weather app</text>
+      <text x="90" y="35" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Chat application</text>
+      <text x="90" y="45" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Task manager</text>
+      <text x="90" y="55" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Portfolio site</text>
+      <text x="90" y="70" fill="#999" font-family="system-ui, -apple-system, sans-serif" font-size="6">Yesterday</text>
+      
+      <!-- Note 3 -->
+      <rect x="170" y="0" width="70" height="75" rx="8" fill="#f3e5f5" stroke="#ce93d8"/>
+      <text x="175" y="12" fill="#1a1a1a" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold">Study Notes</text>
+      <text x="175" y="25" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">JavaScript ES6</text>
+      <text x="175" y="35" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Arrow functions</text>
+      <text x="175" y="45" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Promises</text>
+      <text x="175" y="55" fill="#666" font-family="system-ui, -apple-system, sans-serif" font-size="7">• Async/await</text>
+      <text x="175" y="70" fill="#999" font-family="system-ui, -apple-system, sans-serif" font-size="6">Last week</text>
+    </g>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="30" cy="40" r="20" fill="rgba(16, 185, 129, 0.1)"/>
+  <circle cx="30" cy="40" r="12" fill="rgba(16, 185, 129, 0.2)"/>
+  <rect x="25" y="35" width="10" height="10" rx="2" fill="#10b981"/>
+  <path d="M27 37 L29 39 L33 35" stroke="white" stroke-width="1" fill="none"/>
+  
+  <circle cx="370" cy="210" r="18" fill="rgba(16, 185, 129, 0.1)"/>
+  <rect x="363" y="203" width="14" height="14" rx="2" fill="#10b981"/>
+  <path d="M367 207 L370 210 L373 207" stroke="white" stroke-width="1.5" fill="none"/>
+  <path d="M367 213 L370 210 L373 213" stroke="white" stroke-width="1.5" fill="none"/>
+</svg>
