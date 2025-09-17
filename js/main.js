@@ -12,8 +12,8 @@ const portfolioData = [
         description: "A simple web-based to-do list that allows users to add, delete, and mark tasks as complete with dynamic interaction and local storage",
         image: "assets/images/projects/todo-app.svg",
         technologies: ["HTML", "CSS", "JavaScript"],
-        demoUrl: "#",
-        githubUrl: "#"
+        demoUrl: "https://igpravin.github.io/todo-list-app",
+        githubUrl: "https://github.com/igpravin/todo-list-app"
     },
     {
         id: 2,
@@ -22,8 +22,8 @@ const portfolioData = [
         description: "A responsive personal portfolio website showcasing skills, projects, and contact information with modern design",
         image: "assets/images/projects/portfolio-website-simple.svg",
         technologies: ["HTML", "CSS", "JavaScript"],
-        demoUrl: "#",
-        githubUrl: "#"
+        demoUrl: "https://igpravin.github.io/portfolio-website",
+        githubUrl: "https://github.com/igpravin/portfolio-website"
     },
     {
         id: 3,
@@ -32,8 +32,8 @@ const portfolioData = [
         description: "A web-based notes application that allows users to add, delete, and mark tasks as complete with local storage functionality",
         image: "assets/images/projects/notes-app.svg",
         technologies: ["HTML", "CSS", "JavaScript"],
-        demoUrl: "#",
-        githubUrl: "#"
+        demoUrl: "https://igpravin.github.io/notes-app",
+        githubUrl: "https://github.com/igpravin/notes-app"
     }
 ];
 
@@ -154,6 +154,16 @@ function initializePortfolio() {
                 <p>${item.description}</p>
                 <div class="portfolio-technologies">
                     ${item.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+                <div class="portfolio-links">
+                    <a href="${item.demoUrl}" target="_blank" class="portfolio-link demo-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Live Demo</span>
+                    </a>
+                    <a href="${item.githubUrl}" target="_blank" class="portfolio-link github-link">
+                        <i class="fab fa-github"></i>
+                        <span>View Code</span>
+                    </a>
                 </div>
             </div>
         `;

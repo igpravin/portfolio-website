@@ -195,6 +195,16 @@
         font-size: 0.9rem;
     }
     
+    .portfolio-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .portfolio-link {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
     /* Skills Section */
     .skills-grid {
         grid-template-columns: 1fr;
