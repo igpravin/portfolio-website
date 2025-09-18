@@ -32,8 +32,8 @@ const portfolioData = [
         description: "A comprehensive expense tracking web application that helps users manage their finances by adding, categorizing, and analyzing their expenses with data visualization",
         image: "assets/images/projects/expense-calculator.svg",
         technologies: ["HTML", "CSS", "JavaScript"],
-        demoUrl: "https://igpravin.github.io/expense-calculator",
-        githubUrl: "https://github.com/igpravin/expense-calculator"
+        demoUrl: "https://igpravin.github.io/expense-calculator-web/",
+        githubUrl: "https://github.com/igpravin/expense-calculator-web"
     }
 ];
 
