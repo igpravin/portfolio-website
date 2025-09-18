@@ -1,45 +1,67 @@
-<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
   <rect width="400" height="250" fill="#f8f9fa"/>
-  <rect x="0" y="0" width="400" height="50" fill="#ff8c42"/>
+  <rect x="0" y="0" width="400" height="60" fill="#ff6b35"/>
   
-  <!-- Device outline -->
-  <rect x="40" y="35" width="320" height="200" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="2"/>
-  <rect x="50" y="45" width="300" height="175" rx="4" fill="#ffffff"/>
+  <!-- Laptop mockup -->
+  <rect x="30" y="40" width="340" height="180" rx="12" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+  <rect x="40" y="50" width="320" height="200" rx="8" fill="#1a202c"/>
+  <rect x="45" y="55" width="310" height="155" rx="6" fill="#ffffff"/>
   
-  <!-- Browser bar -->
-  <rect x="50" y="45" width="300" height="25" fill="#f0f0f0"/>
-  <circle cx="62" cy="57.5" r="4" fill="#ff5f56"/>
-  <circle cx="78" cy="57.5" r="4" fill="#ffbd2e"/>
-  <circle cx="94" cy="57.5" r="4" fill="#27ca3f"/>
+  <!-- Browser chrome -->
+  <rect x="45" y="55" width="310" height="30" rx="6" fill="#f7fafc"/>
+  <circle cx="60" cy="70" r="5" fill="#fc8181"/>
+  <circle cx="80" cy="70" r="5" fill="#f6e05e"/>
+  <circle cx="100" cy="70" r="5" fill="#68d391"/>
+  <rect x="120" y="64" width="150" height="12" rx="6" fill="#e2e8f0"/>
   
-  <!-- Header -->
-  <rect x="60" y="80" width="80" height="12" fill="#ff6b35"/>
-  <rect x="250" y="82" width="80" height="8" fill="#ddd"/>
+  <!-- Hero section -->
+  <rect x="55" y="95" width="290" height="60" rx="4" fill="linear-gradient(135deg, #ff6b35, #ff8c42)"/>
+  <circle cx="85" cy="115" r="15" fill="rgba(255, 255, 255, 0.9)"/>
+  <circle cx="85" cy="110" r="5" fill="#ff6b35"/>
+  <path d="M77 120 Q85 117 93 120" fill="#ff6b35"/>
   
-  <!-- Main content -->
-  <rect x="60" y="100" width="100" height="6" fill="#999"/>
-  <rect x="60" y="115" width="150" height="16" fill="#333"/>
-  <rect x="60" y="140" width="180" height="6" fill="#666"/>
+  <!-- Hero text -->
+  <rect x="120" y="105" width="80" height="8" rx="4" fill="rgba(255, 255, 255, 0.9)"/>
+  <rect x="120" y="118" width="120" height="6" rx="3" fill="rgba(255, 255, 255, 0.7)"/>
+  <rect x="120" y="128" width="100" height="6" rx="3" fill="rgba(255, 255, 255, 0.7)"/>
   
-  <!-- Buttons -->
-  <rect x="60" y="160" width="70" height="20" rx="10" fill="#ff6b35"/>
-  <rect x="140" y="160" width="70" height="20" rx="10" fill="#ddd"/>
+  <!-- CTA buttons -->
+  <rect x="120" y="140" width="60" height="12" rx="6" fill="rgba(255, 255, 255, 0.9)"/>
+  <rect x="190" y="140" width="60" height="12" rx="6" fill="rgba(255, 255, 255, 0.2)" stroke="rgba(255, 255, 255, 0.5)" stroke-width="1"/>
   
-  <!-- Profile area -->
-  <circle cx="280" cy="140" r="30" fill="#ff6b35" opacity="0.2"/>
-  <circle cx="280" cy="140" r="20" fill="#ff6b35"/>
-  <circle cx="280" cy="135" r="6" fill="white"/>
-  <path d="M270 150 Q280 145 290 150" fill="white"/>
+  <!-- Content sections -->
+  <g transform="translate(55, 165)">
+    <!-- About section -->
+    <rect x="0" y="0" width="90" height="35" rx="4" fill="#f7fafc"/>
+    <rect x="10" y="8" width="40" height="4" rx="2" fill="#4a5568"/>
+    <rect x="10" y="16" width="70" height="3" rx="1.5" fill="#a0aec0"/>
+    <rect x="10" y="22" width="60" height="3" rx="1.5" fill="#a0aec0"/>
+    
+    <!-- Skills section -->
+    <rect x="100" y="0" width="90" height="35" rx="4" fill="#f7fafc"/>
+    <rect x="110" y="8" width="35" height="4" rx="2" fill="#4a5568"/>
+    <rect x="110" y="16" width="25" height="6" rx="3" fill="#ff6b35"/>
+    <rect x="140" y="16" width="30" height="6" rx="3" fill="#48bb78"/>
+    <rect x="110" y="26" width="35" height="6" rx="3" fill="#4299e1"/>
+    
+    <!-- Projects section -->
+    <rect x="200" y="0" width="90" height="35" rx="4" fill="#f7fafc"/>
+    <rect x="210" y="8" width="40" height="4" rx="2" fill="#4a5568"/>
+    <rect x="210" y="16" width="20" height="15" rx="2" fill="#e2e8f0"/>
+    <rect x="235" y="16" width="20" height="15" rx="2" fill="#e2e8f0"/>
+    <rect x="260" y="16" width="20" height="15" rx="2" fill="#e2e8f0"/>
+  </g>
   
-  <!-- Skills section -->
-  <rect x="50" y="190" width="300" height="25" fill="#f8f9fa"/>
-  <rect x="60" y="200" width="40" height="8" fill="#333"/>
-  <rect x="110" y="202" width="25" height="4" fill="#ddd"/>
-  <rect x="145" y="202" width="30" height="4" fill="#ddd"/>
-  <rect x="185" y="202" width="35" height="4" fill="#ddd"/>
+  <!-- Laptop base -->
+  <rect x="20" y="220" width="360" height="15" rx="7" fill="#4a5568"/>
+  <rect x="180" y="225" width="40" height="5" rx="2" fill="#2d3748"/>
   
-  <!-- Decorative -->
-  <circle cx="370" cy="30" r="12" fill="#ff8c42"/>
-  <rect x="366" y="26" width="8" height="8" fill="white"/>
+  <!-- Decorative elements -->
+  <circle cx="330" cy="40" r="20" fill="rgba(255, 107, 53, 0.1)"/>
+  <circle cx="330" cy="40" r="12" fill="rgba(255, 107, 53, 0.2)"/>
+  <path d="M324 40 L327 43 L336 34" stroke="#ff6b35" stroke-width="2" fill="none"/>
+  
+  <!-- Code brackets decoration -->
+  <text x="350" y="45" fill="#ff6b35" font-family="monospace" font-size="14" font-weight="bold">&lt;/&gt;</text>
 </svg>

@@ -27,13 +27,13 @@ const portfolioData = [
     },
     {
         id: 3,
-        title: "My Notes App",
+        title: "Expense Calculator",
         category: "web",
-        description: "A web-based notes application that allows users to add, delete, and mark tasks as complete with local storage functionality",
-        image: "assets/images/projects/notes-app.svg",
+        description: "A comprehensive expense tracking web application that helps users manage their finances by adding, categorizing, and analyzing their expenses with data visualization",
+        image: "assets/images/projects/expense-calculator.svg",
         technologies: ["HTML", "CSS", "JavaScript"],
-        demoUrl: "https://igpravin.github.io/notes-app",
-        githubUrl: "https://github.com/igpravin/notes-app"
+        demoUrl: "https://igpravin.github.io/expense-calculator",
+        githubUrl: "https://github.com/igpravin/expense-calculator"
     }
 ];
 
