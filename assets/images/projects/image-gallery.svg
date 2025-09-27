@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" style="background:#f8f9fa">
+  <defs>
+    <linearGradient id="galleryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8c42;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="imageGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8e6c8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="imageGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8c8e6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="imageGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e6c8c8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Main gallery container -->
+  <rect x="50" y="40" width="300" height="220" rx="15" fill="white" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="40" width="300" height="50" rx="15" fill="url(#galleryGrad)"/>
+  <text x="200" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Image Gallery</text>
+  
+  <!-- Gallery grid -->
+  <!-- First row -->
+  <rect x="70" y="110" width="80" height="60" rx="8" fill="url(#imageGrad1)" stroke="#ddd" stroke-width="1"/>
+  <rect x="160" y="110" width="80" height="60" rx="8" fill="url(#imageGrad2)" stroke="#ddd" stroke-width="1"/>
+  <rect x="250" y="110" width="80" height="60" rx="8" fill="url(#imageGrad3)" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Second row -->
+  <rect x="70" y="180" width="80" height="60" rx="8" fill="url(#imageGrad2)" stroke="#ddd" stroke-width="1"/>
+  <rect x="160" y="180" width="80" height="60" rx="8" fill="url(#imageGrad1)" stroke="#ddd" stroke-width="1"/>
+  <rect x="250" y="180" width="80" height="60" rx="8" fill="url(#imageGrad3)" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Image icons -->
+  <text x="110" y="145" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">🖼️</text>
+  <text x="200" y="145" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">🌄</text>
+  <text x="290" y="145" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">🎨</text>
+  <text x="110" y="215" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">📷</text>
+  <text x="200" y="215" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">🖼️</text>
+  <text x="290" y="215" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">🌅</text>
+  
+  <!-- Fullscreen overlay indicator -->
+  <rect x="280" y="80" width="60" height="40" rx="8" fill="rgba(0,0,0,0.8)"/>
+  <text x="310" y="100" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Full</text>
+  <text x="310" y="115" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">View</text>
+  
+  <!-- Navigation arrows -->
+  <circle cx="90" cy="150" r="15" fill="rgba(255,107,53,0.9)"/>
+  <text x="90" y="155" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">‹</text>
+  
+  <circle cx="310" cy="150" r="15" fill="rgba(255,107,53,0.9)"/>
+  <text x="310" y="155" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">›</text>
+</svg>

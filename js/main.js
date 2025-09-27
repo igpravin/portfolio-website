@@ -34,6 +34,26 @@ const portfolioData = [
         technologies: ["HTML", "CSS", "JavaScript"],
         demoUrl: "https://igpravin.github.io/expense-calculator-web/",
         githubUrl: "https://github.com/igpravin/expense-calculator-web"
+    },
+    {
+        id: 4,
+        title: "Responsive Image Gallery",
+        category: "web",
+        description: "A modern responsive image gallery with fullscreen view functionality, smooth transitions, and interactive navigation controls for browsing images",
+        image: "assets/images/projects/image-gallery.svg",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "https://responsive-image-gallery-pravin.netlify.app/",
+        githubUrl: "https://github.com/igpravin/responsive-image-gallery"
+    },
+    {
+        id: 5,
+        title: "Task Manager App",
+        category: "web",
+        description: "A comprehensive task management application with features to create, organize, prioritize, and track tasks with an intuitive user interface and local data persistence",
+        image: "assets/images/projects/task-manager.svg",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "https://task-manager-app-pravin.netlify.app/",
+        githubUrl: "https://github.com/igpravin/task-manager-app"
     }
 ];
 
